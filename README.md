@@ -9,7 +9,7 @@ This project uses another approach. Departing with the value of variable 'count'
 In the function count_changed() variable idx is an index to the two-dimensional vector table clrTbl.
 The function contains an algorythm that ensures the idx is alway valid as index to clrTbl.
 
-This repo only worked good with the latest version of the pico-sdk repo and the latest version of the Pimoroni-pico repo, both available here on GitHub. I assume that you are familiar with the pico-sdk and have your development environment setup correctly to build C++ applications for the Raspberry Pi Pico using the pico-sdk. This project comes with all the needed CMakeLists.txt files. For those who are not able to build this project from source: see the ready built files in the /build/src/demo folder. There is, among other files, the file 'explorer_encoder.uf2' that you can flash to your Raspberry Pi Pico.
+This repo only worked good with the latest version of the pico-sdk repo and the latest version of the Pimoroni-pico repo, both available here on GitHub. I assume that you are familiar with the pico-sdk and have your development environment setup correctly to build C++ applications for the Raspberry Pi Pico using the pico-sdk. This project comes with all the needed CMakeLists.txt files. For those who are not able to build this project from source: see the ready built files in the /build/src/demo folder. There is, among other files, the file 'encoder_explorer.uf2' that you can flash to your Raspberry Pi Pico.
 
 Important:
 The original demo.cpp from the Pimoroni-pico examples, contains in line 12 the command: 'I2C i2c(BOARD::BREAKOUT_GARDEN);'
