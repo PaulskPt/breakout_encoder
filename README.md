@@ -14,7 +14,7 @@ This repo only worked good with the latest version of the pico-sdk repo and the 
 Important:
 The original demo.cpp from the Pimoroni-pico examples, contains in line 12 the command: 'I2C i2c(BOARD::BREAKOUT_GARDEN);'
 For use with the Pimoroni pico explorer base (which this repo is build upon), this line has to be changed into:
-'I2C i2c(BOARD::PICO_EXPLORER);'. There is no need to set an I2C address. This is handled in the IOExpander initialization process.
+'I2C i2c(BOARD::PICO_EXPLORER);'. There is no need to set an I2C address. Using "BOARD::PICO_EXPLORER" is sufficient. The addressing is handled by the Pimoroni-pico repo parts.
 
 I used the MS VSCode IDE to edit and manage the project. Built using WSL1/Ubuntu 20.04 from MS Window 10. During the development I also tested and build the project
 from within a Linux Ubuntu 20.04 O.S.
