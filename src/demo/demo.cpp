@@ -84,10 +84,9 @@ void count_changed(int16_t count) {
   g = rgb.at(1);
   b = rgb.at(2);
   if (my_debug)
+  {
     printf("rgb = %d,%d,%d\n", r, g, b);
 
-  if (my_debug)
-  {
     bgnd_colour =  DISP_AUBERGINE;
     fgnd_colour =  DISP_YELLOW;
     set_DispColour(true, bgnd_colour, true);  // clear screen in colour
