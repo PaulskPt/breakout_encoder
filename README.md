@@ -33,7 +33,7 @@ Button B: decrease count;
 Button Y: reset count to 0;
 Button X: leave the main program execution loop and go into a perpetual loop, doing nothing else than blinking the built-in led of the RPi Pico.
 
-ToDo: after increasing/decreasing the count by means of buttons A/B, the rgb color of the rotary encoder led has to be 'udated/aligned'. As far as I learned,
+ToDo: after increasing/decreasing the count by means of buttons A/B, the rgb color of the rotary encoder led has to be 'updated/aligned'. As far as I learned,
 the values of the encoder are readonly. Thus the current effect of zero'ing the count is a kind of presetting the count.
 Example: say, the black index line on the rotary encoder knob is in the 3 o'clock position. If one presses either the Y-button or the reset button, the variable 'count' will be zero'ed. Turning the rotary encoder knob CCW to the 12 o'clock position will result in the value of 'count' becoming -6. Usually the 12 o'clock position would be the 'count' zero position.
 
