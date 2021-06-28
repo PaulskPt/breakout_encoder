@@ -4,7 +4,7 @@ This is a C++ project using a Pimoroni rgb breakout pack on a Pimoroni pico expl
 Idea and sources are from the Pimoroni-pico repo, especially the part from the Examples / breakout_encoder.
 The original example demo.cpp I modified quite a bit, for example: 
   instead of calculation of the rgb color values for the led, originally done in the function from_hsv().
-This project uses another approach. Departing with the value of count and an index two tables: modTbl and clrTbl.
+This project uses another approach. Departing with the value of variable 'count' and an index two tables: modTbl and clrTbl.
 
 In the function count_changed() variable idx is an index to the two-dimensional vector table clrTbl.
 The function contains an algorythm that ensures the idx is alway valid as index to clrTbl.
