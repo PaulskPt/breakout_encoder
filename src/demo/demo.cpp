@@ -374,10 +374,8 @@ int main() {
       if (btns[BTN_X] == 1)
         break;  // exit to infinite loop
       //clr_btns();
-      if ( count != old_count)
-        disp_cnt(count);
  
-      sleep_ms(60);
+      sleep_ms(100);
     }
   }
   else 
