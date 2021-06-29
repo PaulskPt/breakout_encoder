@@ -7,6 +7,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 #include "pico/stdlib.h"
+#include "../../../../../pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h"
 #include <stdio.h>
 #include <math.h>
 #include "../../common/pimoroni_common.hpp"
@@ -33,7 +34,10 @@ I2C i2c(BOARD::PICO_EXPLORER); // BREAKOUT_GARDEN);
 BreakoutEncoder enc(&i2c);
 bool toggle = false;
 
-void count_changed(int16_t count) {
+paulsk::Cnt_it my_ctr; // instantiate object
+
+void count_changed() {
+  int16_t count = my_ctr.have_cnt(); // get the current count value
   uint8_t r = 0;
   uint8_t g = 0;
   uint8_t b = 0;
@@ -247,17 +251,27 @@ void disp_a_txt(std::string s, int row)
   }
 }
 
-void disp_btn_pr(std::string s)
+void disp_btn_pr(std::string s, bool nop)
 {
-  if (s.size()>0)
+  if (nop)
   {
-    disp_a_txt("button "+s,2); // display text on 3rd ofs item p.y
-    disp_a_txt("pressed",3);
+    disp_a_txt("btn not",2);
+    disp_a_txt("in use",3);
+  }
+  else
+  {
+    if (s.size()>0)
+    {
+      disp_a_txt("button "+s,2); // display text on 3rd ofs item p.y
+      disp_a_txt("pressed",3);
+    }
   }
 }
 
-int16_t ck_btns(bool show_txt, int16_t count) 
+void ck_btns(bool show_txt)
 {
+  bool nop = true;
+
   if (my_debug && show_txt)
   {
     std::cout << "To proceed: press A,B,X or Y button" << std::endl;
@@ -267,53 +281,54 @@ int16_t ck_btns(bool show_txt, int16_t count)
   if (p_exp.is_pressed(p_exp.A))
   {
     btns[BTN_A] = 1;
-    disp_btn_pr(b_tns.at(BTN_A));
-    return count+1;
+    disp_btn_pr(b_tns.at(BTN_A), nop);
+    return;
   }
   if (p_exp.is_pressed(p_exp.B))
   {
     btns[BTN_B] = 1;
-    disp_btn_pr(b_tns.at(BTN_B));
-    return count-1;
+    disp_btn_pr(b_tns.at(BTN_B), nop);
+    return;
   }
   if (p_exp.is_pressed(p_exp.X))
   {
+    my_ctr.st_stp(true); // indicate to stop
     btns[BTN_X] = 1;
-    disp_btn_pr(b_tns.at(BTN_X));
-    return 65535;  // indicate to stop
+    //disp_btn_pr(b_tns.at(BTN_X), false);
+    return;  
   }
   if (p_exp.is_pressed(p_exp.Y))
   {
     btns[BTN_Y] = 1;
-    disp_btn_pr(b_tns.at(BTN_Y));
-    return 0;
+    disp_btn_pr(b_tns.at(BTN_Y), nop);
+    return;
   }
-  return count; 
+  return; 
 }
 
 void clr_btns()
 {
   for (auto i = 0; i < btns.size(); i++)
     btns[i] = 0;
+  my_ctr.st_stp(false); // reset stop flag
 }
 void _exit(int status) {
   printf("_exit(): status %d", status); // This function added to prevent a compiler error 'unidentified reference
   //                                       to _exit
 };
 
-void disp_cnt(int16_t count){
+void disp_cnt(){
   static const std::string cnt = "count ";
   set_DispColour(true, bgnd_colour, true);  // clear screen in colour
   sleep_ms(20);
   set_DispColour(true, fgnd_colour, false);
-  disp_a_txt(cnt + " " + std::to_string(count), 1);
+  disp_a_txt(cnt + " " + std::to_string(my_ctr.have_cnt()), 1);
 }
+
 int main() {
 
   bool lStart = true;
-  int16_t count = 0;
   int16_t nw_count = 0;
-  int16_t old_count = 0;
   std::string btn = "0";
   std::string s = "";
 
@@ -331,6 +346,7 @@ int main() {
   disp_a_txt("encoder", 0);
   disp_a_txt("test", 1);
   sleep_ms(2000);
+  my_ctr.clr_cnts(); // zero all private count values
 
   if (enc.init()) 
   {
@@ -356,44 +372,52 @@ int main() {
       if (enc.get_interrupt_flag()) 
       {
         nw_count = enc.read();  // the read() calls the ioe.clear_interrupt_flag()
-        if (lStart || (old_count != nw_count)) {  // show count also at startup
-          if (nw_count < old_count)
-            count -= (old_count - nw_count);
-          else
-            count += (nw_count - old_count);
-
-          old_count = nw_count;
-          count_changed(count);
-          disp_cnt(count);
+        if (lStart || (nw_count != my_ctr.have_old_cnt())) {  // show count also at startup
+          my_ctr.upd_cnt(nw_count);
+          count_changed();
+          disp_cnt();
           if (lStart)
             lStart = false;
         }
         //enc.clear_interrupt_flag();
       }
-      count = ck_btns(false, count); // Check if a btn has been pressed. If so, handle it
-      if (btns[BTN_X] == 1)
-        break;  // exit to infinite loop
-      //clr_btns();
- 
-      sleep_ms(100);
+      ck_btns(false); // Check if a btn has been pressed. If so, handle it
+      if (my_ctr.is_stp())
+      {
+        /** 
+        *  https://www.raspberrypi.org/forums/viewtopic.php?p=1870355, post by cleverca on 2021-05-27.
+        *  \param pc If Zero, a standard boot will be performed, if non-zero this is the program counter to jump to on reset.
+        *  \param sp If \p pc is non-zero, this will be the stack pointer used.
+        *  \param delay_ms Initial load value. Maximum value 0x7fffff, approximately 8.3s.
+        *
+        * *            (pc, sp, delay_ms) */
+        clr_btns();
+        disp_a_txt("reset !", 3);
+        //sleep_ms(1000);
+        /*            (pc, sp, delay_ms) */
+        watchdog_reboot(0, 0, 0x7fffff); // varying delay_ms between 0x1fffff and 0x7fffff does not make much difference!
+      }
+      else if (my_ctr.IsBtnPressed())
+      {
+        sleep_ms(1000); // let the 'btn not in use' msg stay for a moment
+        disp_cnt();  // method to wipe away btn msg
+      }
+      sleep_ms(100); // loop delay
     }
   }
   else 
   {
-    enc.set_led(disp_red.at(0), disp_red.at(1), disp_red.at(2));  // show red led to indicate not able to init rgb encoder object
     enc_intro(2);  // Display text about encoder not found
     gpio_put(PICO_DEFAULT_LED_PIN, true);
     sleep_ms(500);
-  }
-
-  enc_loop_txt();
-  enc.set_led(disp_white.at(0), disp_white.at(1), disp_white.at(2)); // Switch LED to white
-  gpio_put(PICO_DEFAULT_LED_PIN, true);
-  while(true) 
-  {
-    gpio_put(PICO_DEFAULT_LED_PIN, toggle);
-    toggle = !toggle;
-    sleep_ms(100);
+    enc_loop_txt(); // Display text entering infinite loop
+    gpio_put(PICO_DEFAULT_LED_PIN, true);
+    while(true) 
+    {
+      gpio_put(PICO_DEFAULT_LED_PIN, toggle);
+      toggle = !toggle;
+      sleep_ms(1000);
+    }
   }
 
   return 0;

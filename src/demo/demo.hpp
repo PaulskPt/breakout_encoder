@@ -13,6 +13,8 @@
 
 //using namespace pimoroni;
 
+bool my_debug = false;
+
 const std::vector<int> ofs = {20, 60, 110, 180};
 const std::vector<std::string> colours = { "blk", "red", "aub", "ora", "yel", "grn", "blu", "whi"};
 const std::vector<std::string> colours_h = { "black", "red", "aubergine", "orange", "yellow", "green", "blue", "white"};
@@ -115,19 +117,99 @@ static const std::vector<std::vector<int>> clrTbl
 };
 
 static const uint8_t STEPS_PER_REV = 24;
-bool my_debug = false;
 int px_dflt = 15;
 int bgnd_colour = DISP_ORANGE; // Global display background colour
 int fgnd_colour = DISP_YELLOW;  // Global display foreground (text) colour
 
-void count_changed(int16_t);
+void count_changed();
 void set_DispColour(bool, int, bool);
 void enc_intro(int);
 void enc_loop_txt();
 void disp_a_txt(std::string, int);
-void disp_btn_pr(std::string );
-int16_t ck_btns(bool, int16_t);
+void disp_btn_pr(std::string, bool);
+void ck_btns(bool);
 void clr_btns();
 void _exit(int); // to prevent a build error 'undefined reference to _exit when using arm-none-eabi-g++
-void disp_cnt(int16_t);
+void disp_cnt();
 int main();
+
+namespace paulsk {
+
+  class Cnt_it  // Class created to encapsulate the count and old_count values
+  {
+    private:
+      //--------------------------------------------------
+      // Variables
+      //--------------------------------------------------
+      int16_t count;
+      int16_t old_count;
+      bool stp_cnt = false;
+
+    public:
+      //--------------------------------------------------
+      // Constructors/Destructor
+      //--------------------------------------------------
+    public: 
+      //--------------------------------------------------
+      // Methods
+      //--------------------------------------------------
+      void init();
+      void clr_cnts();
+      void upd_cnt(int16_t nw_count);
+      int16_t have_cnt() const;
+      int16_t have_old_cnt() const;
+      bool IsBtnPressed();
+      void st_stp(bool);
+      bool is_stp() const;
+
+    private:
+      void upd_cnts();
+      
+  }; // end of class Cnt_it
+
+  void Cnt_it::init() {};
+
+  void Cnt_it::clr_cnts()
+  {
+    this->count = 0;
+    this->old_count = 0;
+  }
+  void Cnt_it::upd_cnt(int16_t nw_count)
+  {
+    if (nw_count < this->old_count)
+      this->count -= (this->old_count - nw_count);
+    else
+      this->count += (nw_count - this->old_count);
+
+    this->old_count = this->count;
+  }
+
+  int16_t Cnt_it::have_cnt() const 
+  {
+    return this->count;
+  }
+
+  int16_t Cnt_it::have_old_cnt() const 
+  {
+    return this->old_count;
+  }
+
+  bool Cnt_it::IsBtnPressed()
+  {
+    if (btns[BTN_A]==1 || btns[BTN_B]==1 || btns[BTN_X]==1 || btns[BTN_Y]==1)
+      return true;
+    return false;
+  }
+
+  void Cnt_it::st_stp(bool flag)
+  {
+    this->stp_cnt = flag;
+  }
+
+  bool Cnt_it::is_stp() const
+  {
+    return this->stp_cnt;
+  }
+
+
+}; // end of namespace paulsk
