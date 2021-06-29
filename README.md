@@ -1,5 +1,5 @@
 # breakout_encoder
-This is a C++ project using a Pimoroni rgb breakout pack on a Pimoroni pico explorer base and a Raspberry Pi Pico mounted onto the explorer base.
+This is version 2.0 of a C++ project using a Pimoroni rgb breakout pack on a Pimoroni pico explorer base and a Raspberry Pi Pico mounted onto the explorer base.
  
 Idea and sources are from the Pimoroni-pico repo, especially the part from the Examples / breakout_encoder.
 The original example demo.cpp I modified quite a bit, for example: 
@@ -20,24 +20,20 @@ I used the MS VSCode IDE to edit and manage the project. Built using WSL1/Ubuntu
 from within a Linux Ubuntu 20.04 O.S.
 
 ToDo:
-It is known that interrupt polling and subsequent reading of the rgb encoder needs some time. The communication between the Pico and the rgb encoder is via an I2C interface.
-The current situation is that when turning the rotary encoder fast it happens that the program locks up. 
-I use a RPi Pico that has a Pimoroni Resetti button. This reset button can successfully be used to reset the program.
+It is known that interrupt polling and subsequent reading of the rgb encoder needs some time. The communication between the Pimoroni rgb encoder breakout pack and de Raspberry Pi Pico is via an I2C interface.
+Turning the rotary encoder too quickly can result in a lockup of the program.
+I use a RPi Pico that has a Pimoroni Resetti hardware button soldered onto. This reset button can successfully be used to reset the program. In version 2.0 there is also added a software reset. See below.
 
 Buttons (experimental):
-The current functionality of the four buttons alongside the display on the pico explorer base has been added just as part of an experiment.
-The functionality is not perfect. In fact these four buttons are not needed for testing the Pimoroni rgb encoder pack.
 This project (demo.cpp) contains a function to handle button presses.
-Button A: increase count;
-Button B: decrease count;
-Button Y: reset count to 0;
-Button X: leave the main program execution loop and go into a perpetual loop, doing nothing else than blinking the built-in led of the RPi Pico.
+In version 2.0 all buttons are polled in every iteration of the loop in main(). However only button X is used.
+Button X: reset the Pico. The reset procedure takes about 9 seconds. This function has been added as an experiment. I could be useful for those who use a Raspberry Pi Pico that does not have an added hardware reset button.
 
-ToDo: after increasing/decreasing the count by means of buttons A/B, the rgb color of the rotary encoder led has to be 'updated/aligned'. As far as I learned,
-the values of the encoder are readonly. Thus the current effect of zero'ing the count is a kind of presetting the count.
-Example: say, the black index line on the rotary encoder knob is in the 3 o'clock position. If one presses either the Y-button or the reset button, the variable 'count' will be zero'ed. Turning the rotary encoder knob CCW to the 12 o'clock position will result in the value of 'count' becoming -6. Usually the 12 o'clock position would be the 'count' zero position.
+The functionality of the buttons A, B and Y have been deleted. Pressing one of these buttons result in the message: 'BUTTON NOT IN USE'.
 
+In version 2.0 has been added a class Cnt_it. This class is used to encapsulate the encoder count value and the reset flag. The Cnt_it class is defined in demo.hpp. An instance of this class, name: my_ctr is defined in line 37 of demo.cpp.
 
-At start (boot up) of the Pico and before pressing the reset button, it is adviseable to set the rotary encoder button with the black index line in the 12 o'clock position.
+At start (boot up) of the Pico or before starting a reset by pressing button X, it is adviseable to set the rotary encoder button with the black index line in the 12 o'clock position.
 
+If, at start of the program, no rgb encoder breakout pack is found, the program will display the message 'ENCODER NOT FOUND', then displaying the text: 'ENTERING INFINITE LOOP...' and entering in an infinite loop while blinking the built-in led of the Pico 1 time per second.
 

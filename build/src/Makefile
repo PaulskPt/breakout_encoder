@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/i/pico/paul_projects/pico/breakout_encoder
+CMAKE_SOURCE_DIR = /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/i/pico/paul_projects/pico/breakout_encoder/build
+CMAKE_BINARY_DIR = /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/i/pico/paul_projects/pico/breakout_encoder/build/CMakeFiles /mnt/i/pico/paul_projects/pico/breakout_encoder/build/src/CMakeFiles/progress.marks
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/i/pico/paul_projects/pico/breakout_encoder/build/CMakeFiles 0
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build/CMakeFiles /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build/src/CMakeFiles/progress.marks
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,17 +97,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -129,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

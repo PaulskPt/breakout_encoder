@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/i/pico/paul_projects/pico/breakout_encoder
+CMAKE_SOURCE_DIR = /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/i/pico/paul_projects/pico/breakout_encoder/build
+CMAKE_BINARY_DIR = /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/i/pico/paul_projects/pico/breakout_encoder/build/CMakeFiles /mnt/i/pico/paul_projects/pico/breakout_encoder/build/src/demo/CMakeFiles/progress.marks
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/i/pico/paul_projects/pico/breakout_encoder/build/CMakeFiles 0
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build/CMakeFiles /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build/src/demo/CMakeFiles/progress.marks
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/clean
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/preinstall
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/preinstall
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/demo/CMakeFiles/ELF2UF2Build.dir/rule:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/CMakeFiles/ELF2UF2Build.dir/rule
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/CMakeFiles/ELF2UF2Build.dir/rule
 .PHONY : src/demo/CMakeFiles/ELF2UF2Build.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ ELF2UF2Build: src/demo/CMakeFiles/ELF2UF2Build.dir/rule
 
 # fast build rule for target.
 ELF2UF2Build/fast:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/ELF2UF2Build.dir/build.make src/demo/CMakeFiles/ELF2UF2Build.dir/build
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/ELF2UF2Build.dir/build.make src/demo/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
 
 # Convenience name for target.
 src/demo/CMakeFiles/encoder_explorer.dir/rule:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/CMakeFiles/encoder_explorer.dir/rule
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f CMakeFiles/Makefile2 src/demo/CMakeFiles/encoder_explorer.dir/rule
 .PHONY : src/demo/CMakeFiles/encoder_explorer.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ encoder_explorer: src/demo/CMakeFiles/encoder_explorer.dir/rule
 
 # fast build rule for target.
 encoder_explorer/fast:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/build
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/build
 .PHONY : encoder_explorer/fast
 
 __/__/common/pimoroni_i2c.obj: __/__/common/pimoroni_i2c.cpp.obj
@@ -146,7 +146,7 @@ __/__/common/pimoroni_i2c.obj: __/__/common/pimoroni_i2c.cpp.obj
 
 # target to build an object file
 __/__/common/pimoroni_i2c.cpp.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/common/pimoroni_i2c.cpp.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/common/pimoroni_i2c.cpp.obj
 .PHONY : __/__/common/pimoroni_i2c.cpp.obj
 
 __/__/common/pimoroni_i2c.i: __/__/common/pimoroni_i2c.cpp.i
@@ -155,7 +155,7 @@ __/__/common/pimoroni_i2c.i: __/__/common/pimoroni_i2c.cpp.i
 
 # target to preprocess a source file
 __/__/common/pimoroni_i2c.cpp.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/common/pimoroni_i2c.cpp.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/common/pimoroni_i2c.cpp.i
 .PHONY : __/__/common/pimoroni_i2c.cpp.i
 
 __/__/common/pimoroni_i2c.s: __/__/common/pimoroni_i2c.cpp.s
@@ -164,7 +164,7 @@ __/__/common/pimoroni_i2c.s: __/__/common/pimoroni_i2c.cpp.s
 
 # target to generate assembly for a file
 __/__/common/pimoroni_i2c.cpp.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/common/pimoroni_i2c.cpp.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/common/pimoroni_i2c.cpp.s
 .PHONY : __/__/common/pimoroni_i2c.cpp.s
 
 __/__/drivers/ioexpander/ioexpander.obj: __/__/drivers/ioexpander/ioexpander.cpp.obj
@@ -173,7 +173,7 @@ __/__/drivers/ioexpander/ioexpander.obj: __/__/drivers/ioexpander/ioexpander.cpp
 
 # target to build an object file
 __/__/drivers/ioexpander/ioexpander.cpp.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/ioexpander/ioexpander.cpp.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/ioexpander/ioexpander.cpp.obj
 .PHONY : __/__/drivers/ioexpander/ioexpander.cpp.obj
 
 __/__/drivers/ioexpander/ioexpander.i: __/__/drivers/ioexpander/ioexpander.cpp.i
@@ -182,7 +182,7 @@ __/__/drivers/ioexpander/ioexpander.i: __/__/drivers/ioexpander/ioexpander.cpp.i
 
 # target to preprocess a source file
 __/__/drivers/ioexpander/ioexpander.cpp.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/ioexpander/ioexpander.cpp.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/ioexpander/ioexpander.cpp.i
 .PHONY : __/__/drivers/ioexpander/ioexpander.cpp.i
 
 __/__/drivers/ioexpander/ioexpander.s: __/__/drivers/ioexpander/ioexpander.cpp.s
@@ -191,7 +191,7 @@ __/__/drivers/ioexpander/ioexpander.s: __/__/drivers/ioexpander/ioexpander.cpp.s
 
 # target to generate assembly for a file
 __/__/drivers/ioexpander/ioexpander.cpp.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/ioexpander/ioexpander.cpp.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/ioexpander/ioexpander.cpp.s
 .PHONY : __/__/drivers/ioexpander/ioexpander.cpp.s
 
 __/__/drivers/st7789/st7789.obj: __/__/drivers/st7789/st7789.cpp.obj
@@ -200,7 +200,7 @@ __/__/drivers/st7789/st7789.obj: __/__/drivers/st7789/st7789.cpp.obj
 
 # target to build an object file
 __/__/drivers/st7789/st7789.cpp.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/st7789/st7789.cpp.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/st7789/st7789.cpp.obj
 .PHONY : __/__/drivers/st7789/st7789.cpp.obj
 
 __/__/drivers/st7789/st7789.i: __/__/drivers/st7789/st7789.cpp.i
@@ -209,7 +209,7 @@ __/__/drivers/st7789/st7789.i: __/__/drivers/st7789/st7789.cpp.i
 
 # target to preprocess a source file
 __/__/drivers/st7789/st7789.cpp.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/st7789/st7789.cpp.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/st7789/st7789.cpp.i
 .PHONY : __/__/drivers/st7789/st7789.cpp.i
 
 __/__/drivers/st7789/st7789.s: __/__/drivers/st7789/st7789.cpp.s
@@ -218,7 +218,7 @@ __/__/drivers/st7789/st7789.s: __/__/drivers/st7789/st7789.cpp.s
 
 # target to generate assembly for a file
 __/__/drivers/st7789/st7789.cpp.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/st7789/st7789.cpp.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/drivers/st7789/st7789.cpp.s
 .PHONY : __/__/drivers/st7789/st7789.cpp.s
 
 __/__/libraries/breakout_encoder/breakout_encoder.obj: __/__/libraries/breakout_encoder/breakout_encoder.cpp.obj
@@ -227,7 +227,7 @@ __/__/libraries/breakout_encoder/breakout_encoder.obj: __/__/libraries/breakout_
 
 # target to build an object file
 __/__/libraries/breakout_encoder/breakout_encoder.cpp.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/breakout_encoder/breakout_encoder.cpp.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/breakout_encoder/breakout_encoder.cpp.obj
 .PHONY : __/__/libraries/breakout_encoder/breakout_encoder.cpp.obj
 
 __/__/libraries/breakout_encoder/breakout_encoder.i: __/__/libraries/breakout_encoder/breakout_encoder.cpp.i
@@ -236,7 +236,7 @@ __/__/libraries/breakout_encoder/breakout_encoder.i: __/__/libraries/breakout_en
 
 # target to preprocess a source file
 __/__/libraries/breakout_encoder/breakout_encoder.cpp.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/breakout_encoder/breakout_encoder.cpp.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/breakout_encoder/breakout_encoder.cpp.i
 .PHONY : __/__/libraries/breakout_encoder/breakout_encoder.cpp.i
 
 __/__/libraries/breakout_encoder/breakout_encoder.s: __/__/libraries/breakout_encoder/breakout_encoder.cpp.s
@@ -245,7 +245,7 @@ __/__/libraries/breakout_encoder/breakout_encoder.s: __/__/libraries/breakout_en
 
 # target to generate assembly for a file
 __/__/libraries/breakout_encoder/breakout_encoder.cpp.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/breakout_encoder/breakout_encoder.cpp.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/breakout_encoder/breakout_encoder.cpp.s
 .PHONY : __/__/libraries/breakout_encoder/breakout_encoder.cpp.s
 
 __/__/libraries/pico_explorer/pico_explorer.obj: __/__/libraries/pico_explorer/pico_explorer.cpp.obj
@@ -254,7 +254,7 @@ __/__/libraries/pico_explorer/pico_explorer.obj: __/__/libraries/pico_explorer/p
 
 # target to build an object file
 __/__/libraries/pico_explorer/pico_explorer.cpp.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/pico_explorer/pico_explorer.cpp.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/pico_explorer/pico_explorer.cpp.obj
 .PHONY : __/__/libraries/pico_explorer/pico_explorer.cpp.obj
 
 __/__/libraries/pico_explorer/pico_explorer.i: __/__/libraries/pico_explorer/pico_explorer.cpp.i
@@ -263,7 +263,7 @@ __/__/libraries/pico_explorer/pico_explorer.i: __/__/libraries/pico_explorer/pic
 
 # target to preprocess a source file
 __/__/libraries/pico_explorer/pico_explorer.cpp.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/pico_explorer/pico_explorer.cpp.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/pico_explorer/pico_explorer.cpp.i
 .PHONY : __/__/libraries/pico_explorer/pico_explorer.cpp.i
 
 __/__/libraries/pico_explorer/pico_explorer.s: __/__/libraries/pico_explorer/pico_explorer.cpp.s
@@ -272,7 +272,7 @@ __/__/libraries/pico_explorer/pico_explorer.s: __/__/libraries/pico_explorer/pic
 
 # target to generate assembly for a file
 __/__/libraries/pico_explorer/pico_explorer.cpp.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/pico_explorer/pico_explorer.cpp.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/__/__/libraries/pico_explorer/pico_explorer.cpp.s
 .PHONY : __/__/libraries/pico_explorer/pico_explorer.cpp.s
 
 demo.obj: demo.cpp.obj
@@ -281,7 +281,7 @@ demo.obj: demo.cpp.obj
 
 # target to build an object file
 demo.cpp.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/demo.cpp.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/demo.cpp.obj
 .PHONY : demo.cpp.obj
 
 demo.i: demo.cpp.i
@@ -290,7 +290,7 @@ demo.i: demo.cpp.i
 
 # target to preprocess a source file
 demo.cpp.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/demo.cpp.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/demo.cpp.i
 .PHONY : demo.cpp.i
 
 demo.s: demo.cpp.s
@@ -299,7 +299,7 @@ demo.s: demo.cpp.s
 
 # target to generate assembly for a file
 demo.cpp.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/demo.cpp.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/demo.cpp.s
 .PHONY : demo.cpp.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
@@ -308,7 +308,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: mnt/i/pico/pic
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -317,7 +317,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: mnt/i/pico/pico-
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -326,7 +326,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: mnt/i/pico/pico-
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -335,7 +335,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: mnt/i/pico/pico-sd
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -344,7 +344,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: mnt/i/pico/pico-sdk/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -353,7 +353,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: mnt/i/pico/pico-sdk/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -362,7 +362,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: mnt/i/pico/pico-sd
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -371,7 +371,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: mnt/i/pico/pico-sdk/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -380,7 +380,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: mnt/i/pico/pico-sdk/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -389,7 +389,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: mnt/i/pico/pico
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -398,7 +398,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: mnt/i/pico/pico-s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -407,7 +407,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: mnt/i/pico/pico-s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -416,7 +416,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: mnt/i/pico/pico-sd
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -425,7 +425,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: mnt/i/pico/pico-sdk/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -434,7 +434,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: mnt/i/pico/pico-sdk/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -443,7 +443,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: mnt/i/pico/pico-
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -452,7 +452,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: mnt/i/pico/pico-sd
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -461,7 +461,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: mnt/i/pico/pico-sd
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -470,7 +470,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: mnt/i/pico/pico-sd
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -479,7 +479,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: mnt/i/pico/pico-sdk/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -488,7 +488,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: mnt/i/pico/pico-sdk/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
@@ -497,7 +497,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.obj: mnt/i/pico/pico-sd
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
@@ -506,7 +506,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.i: mnt/i/pico/pico-sdk/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
@@ -515,7 +515,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.s: mnt/i/pico/pico-sdk/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -524,7 +524,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: mnt/i/pico/p
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -533,7 +533,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: mnt/i/pico/pic
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -542,7 +542,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: mnt/i/pico/pic
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -551,7 +551,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: mnt/i/pico/p
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -560,7 +560,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: mnt/i/pico/pic
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -569,7 +569,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: mnt/i/pico/pic
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -578,7 +578,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: mnt/i/pico/pico-sdk/li
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -587,7 +587,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: mnt/i/pico/pico-sdk/lib/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -596,7 +596,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: mnt/i/pico/pico-sdk/lib/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -605,7 +605,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: mnt/i/pico/pico-sdk/lib/tin
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -614,7 +614,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: mnt/i/pico/pico-sdk/lib/tinyu
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -623,7 +623,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: mnt/i/pico/pico-sdk/lib/tinyu
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -632,7 +632,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: mnt/i/pico/pico-sdk
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -641,7 +641,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: mnt/i/pico/pico-sdk/l
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -650,7 +650,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: mnt/i/pico/pico-sdk/l
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -659,7 +659,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: 
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -668,7 +668,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: mn
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -677,7 +677,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: mn
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -686,7 +686,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: 
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -695,7 +695,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: mn
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -704,7 +704,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: mn
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.obj: mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -713,7 +713,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.obj: mnt/i/pico/pico-sdk/lib/tinyusb/sr
 
 # target to build an object file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -722,7 +722,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.i: mnt/i/pico/pico-sdk/lib/tinyusb/src/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -731,7 +731,7 @@ mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.s: mnt/i/pico/pico-sdk/lib/tinyusb/src/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : mnt/i/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.obj: mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -740,7 +740,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.obj: mnt/i/pico/pico-s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.i: mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -749,7 +749,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.i: mnt/i/pico/pico-sdk
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.s: mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -758,7 +758,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.s: mnt/i/pico/pico-sdk
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.obj: mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -767,7 +767,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.obj: mnt/i/pico/pico-sdk/src/
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.i: mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -776,7 +776,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.i: mnt/i/pico/pico-sdk/src/co
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.s: mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -785,7 +785,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.s: mnt/i/pico/pico-sdk/src/co
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.obj: mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -794,7 +794,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.obj: mnt/i/pico/pico-sdk/src/comm
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.i: mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -803,7 +803,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.i: mnt/i/pico/pico-sdk/src/common
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.s: mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -812,7 +812,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.s: mnt/i/pico/pico-sdk/src/common
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/sem.obj: mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -821,7 +821,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/sem.obj: mnt/i/pico/pico-sdk/src/common
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/sem.i: mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -830,7 +830,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/sem.i: mnt/i/pico/pico-sdk/src/common/p
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_sync/sem.s: mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -839,7 +839,7 @@ mnt/i/pico/pico-sdk/src/common/pico_sync/sem.s: mnt/i/pico/pico-sdk/src/common/p
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_time/time.obj: mnt/i/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -848,7 +848,7 @@ mnt/i/pico/pico-sdk/src/common/pico_time/time.obj: mnt/i/pico/pico-sdk/src/commo
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/time.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_time/time.i: mnt/i/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -857,7 +857,7 @@ mnt/i/pico/pico-sdk/src/common/pico_time/time.i: mnt/i/pico/pico-sdk/src/common/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_time/time.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/time.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_time/time.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_time/time.s: mnt/i/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -866,7 +866,7 @@ mnt/i/pico/pico-sdk/src/common/pico_time/time.s: mnt/i/pico/pico-sdk/src/common/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_time/time.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/time.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_time/time.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -875,7 +875,7 @@ mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: mnt/i/pico/pico-sdk
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.i: mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -884,7 +884,7 @@ mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.i: mnt/i/pico/pico-sdk/s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.s: mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -893,7 +893,7 @@ mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.s: mnt/i/pico/pico-sdk/s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_util/datetime.obj: mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -902,7 +902,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/datetime.obj: mnt/i/pico/pico-sdk/src/c
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_util/datetime.i: mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -911,7 +911,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/datetime.i: mnt/i/pico/pico-sdk/src/com
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_util/datetime.s: mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -920,7 +920,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/datetime.s: mnt/i/pico/pico-sdk/src/com
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_util/pheap.obj: mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -929,7 +929,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/pheap.obj: mnt/i/pico/pico-sdk/src/comm
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_util/pheap.i: mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -938,7 +938,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/pheap.i: mnt/i/pico/pico-sdk/src/common
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_util/pheap.s: mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -947,7 +947,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/pheap.s: mnt/i/pico/pico-sdk/src/common
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 mnt/i/pico/pico-sdk/src/common/pico_util/queue.obj: mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -956,7 +956,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/queue.obj: mnt/i/pico/pico-sdk/src/comm
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 mnt/i/pico/pico-sdk/src/common/pico_util/queue.i: mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -965,7 +965,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/queue.i: mnt/i/pico/pico-sdk/src/common
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 mnt/i/pico/pico-sdk/src/common/pico_util/queue.s: mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -974,7 +974,7 @@ mnt/i/pico/pico-sdk/src/common/pico_util/queue.s: mnt/i/pico/pico-sdk/src/common
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
@@ -983,7 +983,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: mnt/i/pico/pico-sdk/src
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
@@ -992,7 +992,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: mnt/i/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
@@ -1001,7 +1001,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: mnt/i/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -1010,7 +1010,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: mnt/i/pico/pico-sdk
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -1019,7 +1019,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: mnt/i/pico/pico-sdk/s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -1028,7 +1028,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: mnt/i/pico/pico-sdk/s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -1037,7 +1037,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: mnt/i/pico/pico-s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -1046,7 +1046,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: mnt/i/pico/pico-sdk
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -1055,7 +1055,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: mnt/i/pico/pico-sdk
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -1064,7 +1064,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: mnt/i/pico/pico
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
@@ -1073,7 +1073,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: mnt/i/pico/pico-sdk/src
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
@@ -1082,7 +1082,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: mnt/i/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
@@ -1091,7 +1091,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: mnt/i/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -1100,7 +1100,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: mnt/i/pico/pico-sdk
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -1109,7 +1109,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: mnt/i/pico/pico-sdk/s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -1118,7 +1118,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: mnt/i/pico/pico-sdk/s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -1127,7 +1127,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: mnt/i/pico/pico-sdk/s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1136,7 +1136,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: mnt/i/pico/pico-sdk/src
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1145,7 +1145,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: mnt/i/pico/pico-sdk/src
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
@@ -1154,7 +1154,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: mnt/i/pico/pico-sdk/src
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -1163,7 +1163,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: mnt/i/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -1172,7 +1172,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: mnt/i/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -1181,7 +1181,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: mnt/i/pico/pico-sdk/src
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1190,7 +1190,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: mnt/i/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1199,7 +1199,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: mnt/i/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -1208,7 +1208,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: mnt/i/pic
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -1217,7 +1217,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: mnt/i/pico/pico-sdk/src
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1226,7 +1226,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: mnt/i/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1235,7 +1235,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: mnt/i/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
@@ -1244,7 +1244,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.obj: mnt/i/pico/pico-sdk/src
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
@@ -1253,7 +1253,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.i: mnt/i/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
@@ -1262,7 +1262,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.s: mnt/i/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1271,7 +1271,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: mnt/i/pico/pico-sdk/s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1280,7 +1280,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: mnt/i/pico/pico-sdk/src
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1289,7 +1289,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: mnt/i/pico/pico-sdk/src
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1298,7 +1298,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: mnt/i/pico/pico-sdk
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1307,7 +1307,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: mnt/i/pico/pico-sdk/s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1316,7 +1316,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: mnt/i/pico/pico-sdk/s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1325,7 +1325,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: mnt/i/pico/pico-sdk/s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1334,7 +1334,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: mnt/i/pico/pico-sdk/src
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1343,7 +1343,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: mnt/i/pico/pico-sdk/src
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1352,7 +1352,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: mnt/i/pico/pico-sdk/s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1361,7 +1361,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: mnt/i/pico/pico-sdk/src
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1370,7 +1370,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: mnt/i/pico/pico-sdk/src
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1379,7 +1379,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: mnt/i/pico/pi
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1388,7 +1388,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: mnt/i/pico/pico
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1397,7 +1397,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: mnt/i/pico/pico
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1406,7 +1406,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: mnt/i/pico/pico-sdk/s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1415,7 +1415,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: mnt/i/pico/pico-sdk/src
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1424,7 +1424,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: mnt/i/pico/pico-sdk/src
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -1433,7 +1433,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: mnt/i/pico/pi
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1442,7 +1442,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: mnt/i/pico/pico-sdk
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1451,7 +1451,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: mnt/i/pico/pico-sdk/s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1460,7 +1460,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: mnt/i/pico/pico-sdk/s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1469,7 +1469,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: mnt/i/pico/pico-sdk
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1478,7 +1478,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: mnt/i/pico/pico
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1487,7 +1487,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: mnt/i/pico/p
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1496,7 +1496,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: mnt/i/pico/pic
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1505,7 +1505,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: mnt/i/pico/pic
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1514,7 +1514,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: mnt/i/pico/pico-
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1523,7 +1523,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: mnt/i/pico/pico-sd
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1532,7 +1532,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: mnt/i/pico/pico-sd
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1541,7 +1541,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: mnt/i/pic
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -1550,7 +1550,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1559,7 +1559,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1568,7 +1568,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1577,7 +1577,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: mnt/i/pico/pico-s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1586,7 +1586,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: mnt/i/pico/pic
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1595,7 +1595,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: mnt/i/pico/pico-
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1604,7 +1604,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: mnt/i/pico/pico-
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1613,7 +1613,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: mnt/i/pico/pico-sd
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1622,7 +1622,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: mnt/i/pico/pico-sdk/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1631,7 +1631,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: mnt/i/pico/pico-sdk/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1640,7 +1640,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: mnt/i/pico/
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1649,7 +1649,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: mnt/
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1658,7 +1658,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: mnt/i/pico/pico-
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1667,7 +1667,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: mnt/i/pico/pico-sd
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1676,7 +1676,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: mnt/i/pico/pico-sd
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1685,7 +1685,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: mnt/i/pico/pi
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1694,7 +1694,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: mnt/i/pico/pico-s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1703,7 +1703,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: mnt/i/pico/pico-sdk
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1712,7 +1712,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: mnt/i/pico/pico-sdk
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1721,7 +1721,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: mnt/i/pico/pico-sdk/s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1730,7 +1730,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: mnt/i/pico/pico-sdk/src
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1739,7 +1739,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: mnt/i/pico/pico-sdk/src
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1748,7 +1748,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: mnt/i/pico/pico-sdk
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1757,7 +1757,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: mnt/i/pico/pico-sdk/s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1766,7 +1766,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: mnt/i/pico/pico-sdk/s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1775,7 +1775,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: mnt/i/pic
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1784,7 +1784,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: mnt/i/pico/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1793,7 +1793,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: mnt/i/pico/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1802,7 +1802,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: mnt/i/pico/pico-
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1811,7 +1811,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: mnt/i/pico
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1820,7 +1820,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: mnt/i/pico/p
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1829,7 +1829,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: mnt/i/pico/p
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1838,7 +1838,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: mnt/i/pico/pico-sdk/src
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1847,7 +1847,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: mnt/i/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1856,7 +1856,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: mnt/i/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1865,7 +1865,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: mnt/i/pico/pi
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1874,7 +1874,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: mnt/i/pico/pico
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1883,7 +1883,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: mnt/i/pico/pico
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
@@ -1892,7 +1892,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: mnt/i/pic
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -1901,7 +1901,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: mnt/i/pico/
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -1910,7 +1910,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: mnt/i/pico/
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
@@ -1919,7 +1919,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: mnt/i/pico/pico
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -1928,7 +1928,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: mnt/i/pico/pico-s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -1937,7 +1937,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: mnt/i/pico/pico-s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
@@ -1946,7 +1946,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: mnt
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -1955,7 +1955,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: mnt/i
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -1964,7 +1964,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: mnt/i
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1973,7 +1973,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: mnt/i/pico/pico-sdk/s
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1982,7 +1982,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: mnt/i/pico/pico-sdk/src
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1991,7 +1991,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: mnt/i/pico/pico-sdk/src
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -2000,7 +2000,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: mnt/i/pico/pico
 
 # target to build an object file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -2009,7 +2009,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: mnt/i/pico/pico-s
 
 # target to preprocess a source file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -2018,7 +2018,7 @@ mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: mnt/i/pico/pico-s
 
 # target to generate assembly for a file
 mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(MAKE) -f src/demo/CMakeFiles/encoder_explorer.dir/build.make src/demo/CMakeFiles/encoder_explorer.dir/mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : mnt/i/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 # Help Target
@@ -2251,6 +2251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/i/pico/paul_projects/pico/breakout_encoder/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

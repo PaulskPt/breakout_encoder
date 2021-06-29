@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/i/pico/paul_projects/pico/breakout_encoder/src
+# Install script for directory: /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/i/pico/paul_projects/pico/breakout_encoder/build/src/demo/cmake_install.cmake")
+  include("/mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/build/src/demo/cmake_install.cmake")
 
 endif()
 

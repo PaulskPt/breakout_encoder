@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/i/pico/paul_projects/pico/breakout_encoder/src/demo
+# Install script for directory: /mnt/i/pico/paul_projects/pico/breakout_encoder_cpp_final/src/demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
