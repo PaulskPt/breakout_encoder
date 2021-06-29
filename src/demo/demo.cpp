@@ -50,9 +50,9 @@ void count_changed(int16_t count) {
 
   if (lStart)
   {
-    r = disp_white.at(0);
-    g = disp_white.at(1);
-    b = disp_white.at(2);
+    r = disp_white.at(RED);
+    g = disp_white.at(GREEN);
+    b = disp_white.at(BLUE);
   }
  
   if (count < 0)
@@ -83,10 +83,9 @@ void count_changed(int16_t count) {
   r = rgb.at(0);
   g = rgb.at(1);
   b = rgb.at(2);
-  if (my_debug)
+  if (my_debug) 
   {
     printf("rgb = %d,%d,%d\n", r, g, b);
-
     bgnd_colour =  DISP_AUBERGINE;
     fgnd_colour =  DISP_YELLOW;
     set_DispColour(true, bgnd_colour, true);  // clear screen in colour
@@ -126,31 +125,31 @@ void set_DispColour(bool bf, int disp_colour, bool cleardisp)
   switch (disp_colour)  
   {
     case DISP_BLACK:
-       p_exp.set_pen(disp_black[0], disp_black[1], disp_black[2]);
+       p_exp.set_pen(disp_black[RED], disp_black[GREEN], disp_black[BLUE]);
        break;
     case DISP_RED:
-      p_exp.set_pen(disp_red[0], disp_red[1], disp_red[2]);
+      p_exp.set_pen(disp_red[RED], disp_red[GREEN], disp_red[BLUE]);
       break;
     case DISP_ORANGE:
-      p_exp.set_pen(disp_orange[0], disp_orange[1], disp_orange[2]);
+      p_exp.set_pen(disp_orange[RED], disp_orange[GREEN], disp_orange[BLUE]);
       break;
     case DISP_YELLOW:
-      p_exp.set_pen(disp_yellow[0], disp_yellow[1], disp_yellow[2]);
+      p_exp.set_pen(disp_yellow[RED], disp_yellow[GREEN], disp_yellow[BLUE]);
       break;
     case DISP_GREEN:
-      p_exp.set_pen(disp_green[0], disp_green[1], disp_green[2]);
+      p_exp.set_pen(disp_green[RED], disp_green[GREEN], disp_green[BLUE]);
       break;
     case DISP_BLUE:
-      p_exp.set_pen(disp_blue[0], disp_blue[1], disp_blue[2]);
+      p_exp.set_pen(disp_blue[RED], disp_blue[GREEN], disp_blue[BLUE]);
       break;
     case DISP_AUBERGINE:
-      p_exp.set_pen(disp_auber[0], disp_auber[1], disp_auber[2]);
+      p_exp.set_pen(disp_auber[RED], disp_auber[GREEN], disp_auber[BLUE]);
       break;
     case DISP_WHITE:
-      p_exp.set_pen(disp_white[0], disp_white[1], disp_white[2]);
+      p_exp.set_pen(disp_white[RED], disp_white[GREEN], disp_white[BLUE]);
       break;
     default:
-      p_exp.set_pen(disp_green[0], disp_green[1], disp_green[2]);
+      p_exp.set_pen(disp_green[RED], disp_green[GREEN], disp_green[BLUE]);
       break;
   }
   if (cleardisp)
@@ -369,17 +368,16 @@ int main() {
           if (lStart)
             lStart = false;
         }
-        enc.clear_interrupt_flag();
+        //enc.clear_interrupt_flag();
       }
       count = ck_btns(false, count); // Check if a btn has been pressed. If so, handle it
       if (btns[BTN_X] == 1)
         break;  // exit to infinite loop
       //clr_btns();
-      if (count == 0 || count != old_count)
-      {
+      if ( count != old_count)
         disp_cnt(count);
-      }
-      sleep_ms(20);
+ 
+      sleep_ms(60);
     }
   }
   else 

@@ -27,6 +27,13 @@ const std::vector<int> disp_blue =   {0,     0, 120};   // blue
 const std::vector<int> disp_violet = {170,   0, 255};   // violet
 const std::vector<int> disp_white =  {255, 255, 255};   // white
 
+enum rgb_colour_order
+{
+ RED,     // 0
+ GREEN,   // 1
+ BLUE     // 2
+};
+
 enum disp_colour_order
 {
   DISP_BLACK,       // 0
